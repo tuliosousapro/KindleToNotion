@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+
+# Build artifacts
+dist/
+build/
+*.zip
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store

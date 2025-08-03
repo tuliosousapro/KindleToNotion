@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Kindle to Notion Exporter",
+  "version": "3.1",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://ler.amazon.com.br/*",
+    "https://api.notion.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://ler.amazon.com.br/notebook*"],
+      "js": ["contentScript.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
