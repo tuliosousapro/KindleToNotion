@@ -4,25 +4,28 @@
 
 <h1 align="center">Kindle To Notion Extension</h1>
 <p align="center"><em>Export your Kindle highlights to Notion with a touch of retro fantasy magic.</em></p>
+<p align="center"><em>![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)</em></p>
+<p align="center"><em>![Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-blue)</em></p>
+
 
 
 A Chrome extension to export highlights and notes from Amazon Kindle's notebook page (`https://read.amazon.com/notebook`), or if you are from Brazil (`https://ler.amazon.com.br/notebook`), to a Notion database.
 
-## Features
+## 🧙‍♂️Features
 - Extracts book title, author, cover image, and highlights from Kindle.
 - Supports highlight colors and associated notes.
 - Exports data to a Notion database as a page with quotes and notes.
 - Handles Notion API's 100-block limit by splitting requests into batches.
 - Configurable database property names for flexibility.
 
-## Installation
+## 🛠️Installation
 1. Clone or download this repository.
 2. Open Chrome and navigate to `chrome://extensions/`.
 3. Enable "Developer mode" (top right).
 4. Click "Load unpacked" and select the folder containing the extension files.
 5. The extension will appear in your Chrome toolbar.
 
-## Setup
+## ⚙️Setup
 1. Create a Notion integration:
    - Go to [Notion's Integrations page](https://www.notion.so/my-integrations).
    - Create a new integration and copy the "Internal Integration Token."
@@ -35,13 +38,13 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
    - **Author Property Name**: The exact name of your database's author property (e.g., `Autor`).
 4. Click "Save Settings."
 
-## Usage
-1. Navigate to `https://ler.amazon.com.br/notebook` in Chrome.
+## 🚀Usage
+1. Navigate to [ler.amazon.com.br/notebook](https://ler.amazon.com.br/notebook) in Chrome.
 2. Open the extension popup and click "Export to Notion."
 3. Check the status message in the popup for success or errors.
 4. Verify the new page in your Notion database.
 
-## Development
+## 🧪Development
 - **Files**:
   - `manifest.json`: Extension configuration.
   - `popup.html`/`popup.js`: User interface for settings and export.
@@ -52,7 +55,7 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
   - Open Chrome's developer tools (F12) on the Kindle page for content script logs.
   - Inspect the background page (Right-click extension icon > "Manage Extensions" > "Inspect views: background page") for API logs.
 
-## Contributing
+## 🤝Contributing
 We welcome contributions to improve this extension! To contribute:
 1. Fork this repository.
 2. Create a new branch (`git checkout -b feature/your-feature`).
