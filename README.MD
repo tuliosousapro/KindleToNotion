@@ -5,6 +5,7 @@
 <h1 align="center">Kindle To Notion Extension</h1>
 <p align="center"><em>Export your Kindle highlights to Notion with a touch of retro fantasy magic.</em></p>
 
+
 A Chrome extension to export highlights and notes from Amazon Kindle's notebook page (`https://read.amazon.com/notebook`), or if you are from Brazil (`https://ler.amazon.com.br/notebook`), to a Notion database.
 
 ## Features
