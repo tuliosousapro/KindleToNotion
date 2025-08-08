@@ -1,4 +1,5 @@
 # Kindle to Notion Extension
+https://github.com/tuliosousapro/Kindle-To-Notion-Extension/blob/ae096e9ed0971926ebc75498e950483f32cb95c8/docs/Leonardo_Phoenix_10_Create_a_banner_image_for_the_GitHub_repos_2.jpg
 
 A Chrome extension to export highlights and notes from Amazon Kindle's notebook page (`https://read.amazon.com/notebook`), or if you are from Brazil (`https://ler.amazon.com.br/notebook`), to a Notion database.
 
