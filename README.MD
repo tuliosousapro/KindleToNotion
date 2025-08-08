@@ -5,7 +5,7 @@
 <h1 align="center">Kindle To Notion Extension</h1>
 <p align="center"><em>Export your Kindle highlights to Notion with a touch of retro fantasy magic.</em></p>
 <p align="center">
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg"><img src="https://img.shields.io/badge/Made%20with-JavaScript-blue">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg">  <img src="https://img.shields.io/badge/Made%20with-JavaScript-blue">
 </p>
 
 
