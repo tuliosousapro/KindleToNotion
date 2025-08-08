@@ -70,7 +70,7 @@ Please ensure your code follows:
 - Clear commit messages and documentation.
 
 <p align="center">
-<img src="https://img.shields.io/github/contributors/user/repo">
+<img src="https://img.shields.io/github/contributors/tuliosousapro/Kindle-To-Notion-Extension">
 </p>
 
 ## License
