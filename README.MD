@@ -1,6 +1,6 @@
-# Kindle to Notion Exporter
+# Kindle to Notion Extension
 
-A Chrome extension to export highlights and notes from Amazon Kindle's notebook page (`https://ler.amazon.com.br/notebook`) to a Notion database.
+A Chrome extension to export highlights and notes from Amazon Kindle's notebook page (`https://read.amazon.com/notebook`), or if you are from Brazil (`https://ler.amazon.com.br/notebook`), to a Notion database.
 
 ## Features
 - Extracts book title, author, cover image, and highlights from Kindle.
@@ -24,7 +24,7 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
 2. Open the extension's popup (click the extension icon in Chrome).
 3. Enter:
    - **Notion API Token**: Your integration token.
-   - **Notion Database ID**: Found in the database URL (e.g., `https://www.notion.so/f7979b5aae9e4xerequinha2f8fab46?v=796ed82exemplokabal790a096` → `98a0examplepage244bc0`).
+   - **Notion Database ID**: Found in the database URL (e.g., `https://www.notion.so/f7979b5axerequinha2f8fa?v=796edexemplokabal79a096` → `f7979b5axerequinha2f8fa`).
    - **Title Property Name**: The exact name of your database's title property (e.g., `Título do Livro`).
    - **Author Property Name**: The exact name of your database's author property (e.g., `Autor`).
 4. Click "Save Settings."
