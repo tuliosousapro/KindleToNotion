@@ -74,7 +74,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## 👾Issues
 Report bugs or suggest features by opening an issue in this repository.
-For common questions, visit the [📘 FAQ](FAQ.md).
 
 ## 🎈FAQ
 💡 Curious how it works or have questions? 
