@@ -69,10 +69,6 @@ Please ensure your code follows:
 - Chrome's Content Security Policy (no inline scripts).
 - Clear commit messages and documentation.
 
-<p align="center">
-<img src="https://img.shields.io/github/contributors/tuliosousapro/Kindle-To-Notion-Extension">
-</p>
-
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
