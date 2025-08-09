@@ -56,7 +56,7 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
   - Open Chrome's developer tools (F12) on the Kindle page for content script logs.
   - Inspect the background page (Right-click extension icon > "Manage Extensions" > "Inspect views: background page") for API logs.
 
-## 🤝Contributing <p><img src="https://img.shields.io/github/contributors/tuliosousapro/Kindle-To-Notion-Extension"></p>
+## 🤝Contributing <img src="https://img.shields.io/github/contributors/tuliosousapro/Kindle-To-Notion-Extension">
 We welcome contributions to improve this extension! To contribute:
 1. Fork this repository.
 2. Create a new branch (`git checkout -b feature/your-feature`).
