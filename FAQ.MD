@@ -5,7 +5,7 @@ Absolutely! It works like a charm with any language, the thing is — The extens
 E.g.: **.com / .com.br / .uk**
 
 Just head to [ler.amazon.com.br/notebook](https://ler.amazon.com.br/notebook) or [read.amazon.com/notebook](https://read.amazon.com/notebook) and let the magic happen.
-**P.S. At this moment, the extension was not tested with all available Amazon sub-domains and TLDs.**
+- **P.S. At this moment, the extension was not tested with all available Amazon sub-domains and TLDs.**
 
 ### 🧠 Do I need to pay for Notion?
 Nope. You can use the free Notion plan. Just create an integration and share your database with it. Easy peasy.
