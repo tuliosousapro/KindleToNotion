@@ -8,8 +8,6 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg">  <img src="https://img.shields.io/badge/Made%20with-JavaScript-blue">  <img src="https://img.shields.io/badge/Notion-API-blue">  <img src="https://img.shields.io/badge/Platform-Chrome%20Extension-green">  <img src="https://img.shields.io/github/issues/tuliosousapro/Kindle-To-Notion-Extension">  <img src="https://img.shields.io/github/stars/tuliosousapro/Kindle-To-Notion-Extension?style=social">
 </p>
 
-
-
 A Chrome extension to export highlights and notes from Amazon Kindle's notebook page (`https://read.amazon.com/notebook`), or if you are from Brazil (`https://ler.amazon.com.br/notebook`), to a Notion database.
 
 ## 🧙‍♂️Features
@@ -40,7 +38,7 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
 4. Click "Save Settings."
 
 ## 🚀Usage
-1. Navigate to [ler.amazon.com.br/notebook](https://ler.amazon.com.br/notebook) in Chrome.
+1. Navigate to [ler.amazon.com.br/notebook](https://ler.amazon.com.br/notebook) or [read.amazon.com/notebook](https://read.amazon.com/notebook) in Chrome.
 2. Open the extension popup and click "Export to Notion."
 3. Check the status message in the popup for success or errors.
 4. Verify the new page in your Notion database.
