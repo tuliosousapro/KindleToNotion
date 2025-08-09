@@ -77,5 +77,5 @@ Report bugs or suggest features by opening an issue in this repository.
 For common questions, visit the [📘 FAQ](FAQ.md).
 
 ## 🎈FAQ
-💡 Curious how it works or have questions?
+💡 Curious how it works or have questions? 
 Browse the [FAQ](FAQ.MD) for answers, tips, and more.
