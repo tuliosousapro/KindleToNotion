@@ -76,5 +76,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Report bugs or suggest features by opening an issue in this repository.
 
 ## FAQ
-> 💡 Curious how it works or have questions?
-> <p> Browse the [FAQ](FAQ.MD) for answers, tips, and more.</p>
+💡 Curious how it works or have questions?
+<p> Browse the [FAQ](FAQ.MD) for answers, tips, and more.</p>
