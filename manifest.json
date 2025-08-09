@@ -1,15 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "Kindle to Notion Exporter",
+  "name": "Kindle2Notion Extension",
   "version": "3.1",
   "permissions": ["storage"],
   "host_permissions": [
-    "https://ler.amazon.com.br/*",
+    "https://ler.amazon.com.br/notebook*",
+    "https://read.amazon.com/notebook*",
     "https://api.notion.com/*"
   ],
   "content_scripts": [
     {
-      "matches": ["https://ler.amazon.com.br/notebook*"],
+      "matches": [
+        "https://ler.amazon.com.br/notebook*",
+        "https://read.amazon.com/notebook*"
+      ],
       "js": ["contentScript.js"],
       "run_at": "document_end"
     }
