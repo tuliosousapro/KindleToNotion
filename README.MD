@@ -77,4 +77,4 @@ Report bugs or suggest features by opening an issue in this repository.
 
 ## FAQ
 > 💡 Curious how it works or have questions?
-Browse the [📘 FAQ - Calabreso Edition](./FAQ.md) for answers, tips, and more.
+<p>Browse the [📘 FAQ - Calabreso Edition](./FAQ.md) for answers, tips, and more.</p>
