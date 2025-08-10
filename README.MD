@@ -10,7 +10,7 @@
 
 A Chrome extension to export highlights and notes from Amazon Kindle's notebook page (`https://read.amazon.com/notebook`), or if you are from Brazil (`https://ler.amazon.com.br/notebook`), to a Notion database.
 
-<h1 align="center">🧙‍♂️YOU SHALL TAKE NOTES!!!⭐</h1>
+<h1 align="center">🧙‍♂️YOU... SHALL TAKE NOTES!!!⭐</h1>
 
 ## 🧙‍♂️Features
 📚 Extracts book title, author, cover image, and highlights from Kindle.
