@@ -13,11 +13,11 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
 <h1 align="center">🧙‍♂️YOU... SHALL TAKE NOTES!!!⭐</h1>
 
 ## 🧙‍♂️Features
-📚 Extracts book title, author, cover image, and highlights from Kindle.
-🌈 Supports highlight colors and associated notes.
-📝 Exports data to a Notion database as a page with quotes and notes.
-🔁 Smart batching for Notion API limits. 100-block limit by splitting requests.
-🔧 Configurable database property names for flexibility.
+- 📚 Extracts book title, author, cover image, and highlights from Kindle.
+- 🌈 Supports highlight colors and associated notes.
+- 📝 Exports data to a Notion database as a page with quotes and notes.
+- 🔁 Smart batching for Notion API limits. 100-block limit by splitting requests.
+- 🔧 Configurable database property names for flexibility.
 
 ## 🛠️Installation
 1. Clone or download this repository.
