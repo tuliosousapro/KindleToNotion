@@ -80,7 +80,7 @@ Found a bug or have a feature idea? Open an issue right here in this repo.
 Browse the [FAQ](FAQ.MD) for answers, tips, and more.
 
 ## ⭐️Found it useful?
-Smash that star button — it costs you nothing and means the world to this humble repo. Oh, and don’t be shy: share it like it's your grandma’s secret cookie recipe.
+Smash that star button <img src="https://img.shields.io/github/stars/tuliosousapro/Kindle-To-Notion-Extension?style=social"> — it costs you nothing and means the world to this humble repo. Oh, and don’t be shy: share it like it's your grandma’s secret cookie recipe.
 
 ## 🧙Kindle wizardry deserves a star
 If this extension casts a productivity spell on your Kindle chaos, hit that ⭐ and summon a tweet, post, or shout from the nearest rooftop.
