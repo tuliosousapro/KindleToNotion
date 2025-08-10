@@ -1,21 +1,45 @@
-# Security Policy
+## 🛡️ Security Policy
 
-## Supported Versions
+We take your Kindle highlights and Notion pages seriously — which means security matters. Here’s how we keep things tidy, and what to do if something seems off.
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+---
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+### ✅ Supported Versions
 
-## Reporting a Vulnerability
+| Version   | Supported |
+|-----------|-----------|
+| 1.1       | ✅ Yes    |
 
-Use this section to tell people how to report a vulnerability.
+If you're using a version that’s not listed here, you're on your own quest — updates and security patches may not reach you.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+---
+
+### 🕵️ Reporting Vulnerabilities
+
+Spotted something suspicious?  
+Whether it's a leaky token, an API misfire, or something Gandalf wouldn’t trust — **report it**.
+
+**How to report:**
+
+- Create a [GitHub issue](https://github.com/tuliosousapro/Kindle-To-Notion-Extension/issues) and label it `security`.
+- Include:
+  - Extension version
+  - Steps to reproduce
+  - Potential impact
+
+**What happens next?**
+
+- You’ll get a response within 48 hours
+- If it’s real, we’ll work on a fix and credit you (if you want)
+- If it’s not, we’ll still appreciate the effort — no trolls here
+
+---
+
+### 🔐 Best Practices You Should Follow
+
+Even magical extensions need human help:
+
+- Never share your Notion API token publicly.
+- Make sure your Notion integration only has access to the databases it needs.
+- Remove unused permissions regularly.
+- Don't install random forks of this extension unless you trust the wizard behind them.
