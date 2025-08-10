@@ -10,6 +10,8 @@
 
 A Chrome extension to export highlights and notes from Amazon Kindle's notebook page (`https://read.amazon.com/notebook`), or if you are from Brazil (`https://ler.amazon.com.br/notebook`), to a Notion database.
 
+# 🧙‍♂️YOU SHALL TAKE NOTES!!!⭐
+
 ## 🧙‍♂️Features
 - Extracts book title, author, cover image, and highlights from Kindle.
 - Supports highlight colors and associated notes.
@@ -76,3 +78,12 @@ Report bugs or suggest features by opening an issue in this repository.
 ## 🎈FAQ
 💡 Curious how it works or have questions? 
 Browse the [FAQ](FAQ.MD) for answers, tips, and more.
+
+## ⭐️Found it useful?
+Smash that star button — it costs you nothing and means the world to this humble repo. Oh, and don’t be shy: share it like it's your grandma’s secret cookie recipe.
+
+## 🧙Kindle wizardry deserves a star
+If this extension cast a productivity spell on your Kindle chaos, hit that ⭐ and summon a tweet, post, or shout from the nearest rooftop.
+
+## 🛠Help spread the magic
+Star this repo if you believe in neat, colorful Kindle exports to Notion. Then pass it along to the next nerd in line.
