@@ -10,21 +10,21 @@
 
 A Chrome extension to export highlights and notes from Amazon Kindle's notebook page (`https://read.amazon.com/notebook`), or if you are from Brazil (`https://ler.amazon.com.br/notebook`), to a Notion database.
 
-# 🧙‍♂️YOU SHALL TAKE NOTES!!!⭐
+<h1 align="center">🧙‍♂️YOU SHALL TAKE NOTES!!!⭐</h1>
 
 ## 🧙‍♂️Features
-- Extracts book title, author, cover image, and highlights from Kindle.
-- Supports highlight colors and associated notes.
-- Exports data to a Notion database as a page with quotes and notes.
-- Handles Notion API's 100-block limit by splitting requests into batches.
-- Configurable database property names for flexibility.
+📚 Extracts book title, author, cover image, and highlights from Kindle.
+🌈 Supports highlight colors and associated notes.
+📝 Exports data to a Notion database as a page with quotes and notes.
+🔁 Smart batching for Notion API limits. 100-block limit by splitting requests.
+🔧 Configurable database property names for flexibility.
 
 ## 🛠️Installation
 1. Clone or download this repository.
 2. Open Chrome and navigate to `chrome://extensions/`.
 3. Enable "Developer mode" (top right).
 4. Click "Load unpacked" and select the folder containing the extension files.
-5. The extension will appear in your Chrome toolbar.
+5. Voilà — The extension will appear in your Chrome toolbar.
 
 ## ⚙️Setup
 1. Create a Notion integration:
@@ -37,7 +37,7 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
    - **Notion Database ID**: Found in the database URL (e.g., `https://www.notion.so/f7979b5axerequinha2f8fa?v=796edexemplokabal79a096` → `f7979b5axerequinha2f8fa`).
    - **Title Property Name**: The exact name of your database's title property (e.g., `Título do Livro`).
    - **Author Property Name**: The exact name of your database's author property (e.g., `Autor`).
-4. Click "Save Settings."
+4. Click "Save Settings."🎉
 
 ## 🚀Usage
 1. Navigate to [ler.amazon.com.br/notebook](https://ler.amazon.com.br/notebook) or [read.amazon.com/notebook](https://read.amazon.com/notebook) in Chrome.
@@ -73,7 +73,7 @@ Please ensure your code follows:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## 👾Issues
-Report bugs or suggest features by opening an issue in this repository.
+Found a bug or have a feature idea? Open an issue right here in this repo.
 
 ## 🎈FAQ
 💡 Curious how it works or have questions? 
@@ -83,7 +83,7 @@ Browse the [FAQ](FAQ.MD) for answers, tips, and more.
 Smash that star button — it costs you nothing and means the world to this humble repo. Oh, and don’t be shy: share it like it's your grandma’s secret cookie recipe.
 
 ## 🧙Kindle wizardry deserves a star
-If this extension cast a productivity spell on your Kindle chaos, hit that ⭐ and summon a tweet, post, or shout from the nearest rooftop.
+If this extension casts a productivity spell on your Kindle chaos, hit that ⭐ and summon a tweet, post, or shout from the nearest rooftop.
 
 ## 🛠Help spread the magic
 Star this repo if you believe in neat, colorful Kindle exports to Notion. Then pass it along to the next nerd in line.
