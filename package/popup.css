@@ -1,0 +1,69 @@
+/* Retro Dark Fantasy Theme */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2a1a3d; /* Deep purple dungeon base */
+  color: #f4a261; /* Fiery red text */
+  margin: 0;
+  padding: 10px;
+  width: 200px;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #e76f51; /* Warm highlight for title */
+}
+
+input, button {
+  display: block;
+  width: 90%;
+  margin: 5px auto;
+  padding: 5px;
+  border: 1px solid #8d5524; /* Earthy brown border */
+  border-radius: 3px;
+  background-color: #3c2f4a; /* Darker purple for inputs */
+  color: #f4a261;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #e76f51; /* Fiery red hover effect */
+  cursor: pointer;
+}
+
+.loading {
+  display: none;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #f4a261;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Tooltip styling */
+[title] {
+  position: relative;
+}
+
+[title]:hover:after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #8d5524; /* Earthy brown tooltip background */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1;
+}
