@@ -9,20 +9,57 @@
     input { width: 100%; padding: 5px; margin-top: 5px; }
     button { margin-top: 10px; padding: 5px 10px; }
     #status { margin-top: 10px; color: green; }
+      /* Spinner */
+      #spinner {
+        display: none;
+        margin: 10px auto;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #555;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      /* Retro Fantasy Dark Theme */
+      body.retro-dark {
+        background: linear-gradient(135deg, #232526 0%, #414345 100%);
+        color: #e0c97a;
+        font-family: 'Press Start 2P', monospace;
+      }
+      body.retro-dark input, body.retro-dark button {
+        background: #2d2d2d;
+        color: #e0c97a;
+        border: 1px solid #e0c97a;
+      }
+      body.retro-dark h3 {
+        color: #e0c97a;
+        text-shadow: 0 0 8px #e0c97a;
+      }
   </style>
 </head>
 <body>
   <h3>Kindle to Notion Extension</h3>
+  <label for="themeSelect">Tema:</label>
+  <select id="themeSelect" title="Escolha o tema da extensão">
+    <option value="default">Padrão</option>
+    <option value="light">Claro</option>
+    <option value="retro-dark">Retro Fantasy Dark</option>
+  </select>
   <label for="token">Notion API Token:</label>
-  <input type="text" id="token" />
+  <input type="text" id="token" title="Seu token de integração da API do Notion" />
   <label for="databaseId">Notion Database ID:</label>
-  <input type="text" id="databaseId" />
+  <input type="text" id="databaseId" title="ID do banco de dados do Notion (formato UUID)" />
   <label for="titleProperty">Title Property Name:</label>
-  <input type="text" id="titleProperty" placeholder="e.g., Título do Livro" />
+  <input type="text" id="titleProperty" placeholder="e.g., Título do Livro" title="Nome da propriedade de título no Notion" />
   <label for="authorProperty">Author Property Name:</label>
-  <input type="text" id="authorProperty" placeholder="e.g., Autor" />
-  <button id="save">Save Settings</button>
-  <button id="export">Export to Notion</button>
+  <input type="text" id="authorProperty" placeholder="e.g., Autor" title="Nome da propriedade de autor no Notion" />
+  <button id="save" title="Salvar configurações">Save Settings</button>
+  <button id="export" title="Exportar desta página para o Notion">Export to Notion</button>
+  <div id="spinner"></div>
   <p id="status"></p>
   <script src="popup.js"></script>
 </body>
