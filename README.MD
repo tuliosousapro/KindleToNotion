@@ -5,7 +5,7 @@
 <h1 align="center">Kindle To Notion Extension V1.1</h1>
 <p align="center"><em>Export your Kindle highlights to Notion with a touch of retro fantasy magic.</em></p>
 <p align="center">
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg">  <img src="https://img.shields.io/badge/Made%20with-JavaScript-blue">  <img src="https://img.shields.io/badge/Notion-API-blue">  <img src="https://img.shields.io/badge/Platform-Chrome%20Extension-green">  <img src="https://img.shields.io/github/issues/tuliosousapro/Kindle-To-Notion-Extension">  <img src="https://img.shields.io/github/stars/tuliosousapro/Kindle-To-Notion-Extension?style=social">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg">  <img src="https://img.shields.io/badge/Made%20with-JavaScript-blue">  <img src="https://img.shields.io/badge/Notion-API-blue">  <img src="https://img.shields.io/badge/Platform-Chrome%20Extension-green">  <img src="https://img.shields.io/chrome-web-store/v/camgnmkmolfidaefoidblkkloimnmalo?label=Chrome%20Web%20Store">  <img src="https://img.shields.io/github/issues/tuliosousapro/Kindle-To-Notion-Extension">  <img src="https://img.shields.io/github/stars/tuliosousapro/Kindle-To-Notion-Extension?style=social">
 </p>
 
 A Chrome extension to export highlights and notes from Amazon Kindle's notebook page (`https://read.amazon.com/notebook`), or if you are from Brazil (`https://ler.amazon.com.br/notebook`), to a Notion database.
@@ -25,6 +25,8 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
 3. Enable "Developer mode" (top right).
 4. Click "Load unpacked" and select the folder containing the extension files.
 5. Voilà — The extension will appear in your Chrome toolbar.
+
+> 💡 Prefer a one-click install? [Get it from the Chrome Web Store](https://chromewebstore.google.com/detail/kindle2notion-extension/camgnmkmolfidaefoidblkkloimnmalo?authuser=0&hl=pt-BR)
 
 ## ⚙️Setup
 1. Create a Notion integration:
