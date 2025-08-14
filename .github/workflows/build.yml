@@ -24,7 +24,7 @@ jobs:
 
       - name: Build project
         run: npm run build
-        working-directory: package/build/
+        working-directory: package
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
