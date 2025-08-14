@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './components/ui/button';
-import { Input } from './components/ui/input';
-import { Label } from './components/ui/label';
-import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
-import { Alert, AlertDescription } from './components/ui/alert';
-import { ScrollArea } from './components/ui/scroll-area';
+import { Button } from '.package/components/ui/button';/
+import { Input } from '.package/components/ui/input';
+import { Label } from '.package/components/ui/label';
+import { Card, CardContent, CardHeader, CardTitle } from '.package/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '.package/components/ui/tabs';
+import { Alert, AlertDescription } from '.package/components/ui/alert';
+import { ScrollArea } from '.package/components/ui/scroll-area';
 import { BookOpen, Download, Settings, Check, AlertCircle } from 'lucide-react';
 
 const App = () => {
