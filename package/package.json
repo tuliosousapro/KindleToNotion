@@ -10,13 +10,18 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^1.2.1",
     "tailwind-merge": "^1.14.0",
-    "lucide-react": "^0.268.0"
+    "lucide-react": "^0.268.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "typescript": "^5.4.2",
     "ts-loader": "^9.4.2",
     "webpack": "^5.101.1",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/chrome": "^0.0.183"
   },
   "scripts": {
     "build": "webpack --mode=production"
