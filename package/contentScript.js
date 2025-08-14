@@ -1,6 +1,6 @@
 console.log("Content script loaded");
 
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+chrome.runtime.onMessage.addEventListener((message, sender, sendResponse) => {
   if (message.action === 'export') {
     console.log("Export message received");
     const title = document.querySelector('h3.kp-notebook-metadata')?.textContent.trim() || 'Unknown Title';
