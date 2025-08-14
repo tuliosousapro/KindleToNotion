@@ -24,10 +24,10 @@ jobs:
 
       - name: Build project
         run: npm run build
-        working-directory: package
+        working-directory: package/build/
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: extension-build
-          path: build/  # Outputs to /build as specified
+          path: package/build/  # Outputs to /build as specified
