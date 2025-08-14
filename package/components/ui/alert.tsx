@@ -19,7 +19,7 @@ export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
 }
 
-const Alert: React.FC<AlertProps> = ({ className, variant = 'default', children, ...props }) => {
+export const Alert: React.FC<AlertProps> = ({ className, variant = 'default', children, ...props }) => {
   return (
     <div role="alert" className={cn(alertVariants({ variant, className }))} {...props}>
       {children}
@@ -27,4 +27,10 @@ const Alert: React.FC<AlertProps> = ({ className, variant = 'default', children,
   );
 };
 
-export { Alert };
+export const AlertDescription: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({ children, className, ...props }) => {
+  return (
+    <div className={cn('text-sm', className)} {...props}>
+      {children}
+    </div>
+  );
+};
