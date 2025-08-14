@@ -1,23 +1,23 @@
 {
   "name": "kindle2notion-extension",
-  "version": "1.2",
-  "description": "Export Kindle highlights to Notion",
-  "scripts": {
-    "build": "webpack --mode=production",
-    "dev": "webpack --mode=development --watch"
+  "version": "1.2.0",
+  "private": true,
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.0.0",
+    "@radix-ui/react-label": "^1.0.0",
+    "@radix-ui/react-tabs": "^1.0.0",
+    "@radix-ui/react-scroll-area": "^1.0.0",
+    "class-variance-authority": "^0.8.0",
+    "clsx": "^1.2.1",
+    "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.246",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "webpack": "^5.88.0",
-    "webpack-cli": "^5.1.0",
-    "typescript": "^5.1.0",
-    "ts-loader": "^9.4.0"
+    "typescript": "^5.4.2",
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.101.1",
+    "webpack-cli": "^4.10.0"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "lucide-react": "^0.284.0"
+  "scripts": {
+    "build": "webpack --mode=production"
   }
 }
