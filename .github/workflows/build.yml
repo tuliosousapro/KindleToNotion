@@ -20,9 +20,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: package
 
       - name: Build project
         run: npm run build
+        working-directory: package
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
