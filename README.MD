@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/tuliosousapro/Kindle-To-Notion-Extension/blob/main/docs/Leonardo_Phoenix_10_Create_a_banner_image_for_the_GitHub_repos_2.jpg?raw=true" alt="Kindle2Notion Banner" width="100%" />
+  <img src="https://github.com/tuliosousapro/Kindle-To-Notion-Extension/blob/main/docs/Leonardo_Phoenix_10_Create_a_banner_image_for_the_GitHub_repos_2.jpg?raw=true" alt="Kindle To Notion Extension Banner" width="100%" />
 </p>
 
 <h1 align="center">Kindle To Notion Extension v1.2.1</h1>
