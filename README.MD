@@ -10,6 +10,8 @@
 
 A Chrome extension to export highlights and notes from Amazon Kindle's notebook page (`https://read.amazon.com/notebook`), or if you are from Brazil (`https://ler.amazon.com.br/notebook`), to a Notion database.
 
+<a href="https://www.producthunt.com/products/kindle2notion-extension?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-kindle2notion&#0045;extension" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1004546&theme=dark&t=1755527287444" alt="Kindle2notion&#0032;extension - An&#0032;extension&#0032;easy&#0032;save&#0032;your&#0032;kindle&#0032;highlights&#0032;into&#0032;Notion | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 <h1 align="center">🧙‍♂️YOU... SHALL TAKE NOTES!!!⭐</h1>
 
 ## 🧙‍♂️Features
