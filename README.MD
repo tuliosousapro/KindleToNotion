@@ -12,10 +12,6 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
 
 <h1 align="center">🧙‍♂️YOU... SHALL TAKE NOTES!!!⭐</h1>
 
-<p align="center">
-<a href="https://www.producthunt.com/products/kindle2notion-extension?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-kindle2notion&#0045;extension" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1004546&theme=dark&t=1755527287444" alt="Kindle2notion&#0032;extension - An&#0032;extension&#0032;easy&#0032;save&#0032;your&#0032;kindle&#0032;highlights&#0032;into&#0032;Notion | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-</p>
-
 ## 🧙‍♂️Features
 - 📚 Extracts book title, author, cover image, and highlights from Kindle.
 - 🌈 Supports highlight colors and associated notes.
@@ -89,11 +85,9 @@ Found a bug or have a feature idea? Open an issue right here in this repo.
 💡 Curious how it works or have questions? 
 Browse the [FAQ](FAQ.MD) for answers, tips, and more.
 
-## ⭐️Found it useful?
-Smash that star button <img src="https://img.shields.io/github/stars/tuliosousapro/Kindle-To-Notion-Extension?style=social"> — it costs you nothing and means the world to this humble repo. Oh, and don’t be shy: share it like it's your grandma’s secret cookie recipe.
-
 ## 🧙Kindle wizardry deserves a star
-If this extension casts a productivity spell on your Kindle chaos, hit that ⭐ and summon a tweet, post, or shout from the nearest rooftop.
+Smash that star button <img src="https://img.shields.io/github/stars/tuliosousapro/Kindle-To-Notion-Extension?style=social"> — it costs you nothing and means the world to this humble repo. Oh, and don’t be shy: If this extension casts a productivity spell on your Kindle chaos, hit that ⭐ and summon a tweet, post, or shout from the nearest rooftop.
 
-## 🛠Help spread the magic
-Star this repo if you believe in neat, colorful Kindle exports to Notion. Then pass it along to the next nerd in line.
+<p align="center">
+<a href="https://www.producthunt.com/products/kindle2notion-extension?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-kindle2notion&#0045;extension" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1004546&theme=dark&t=1755527287444" alt="Kindle2notion&#0032;extension - An&#0032;extension&#0032;easy&#0032;save&#0032;your&#0032;kindle&#0032;highlights&#0032;into&#0032;Notion | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+</p>
