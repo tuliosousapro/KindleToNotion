@@ -13,23 +13,23 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
 <h1 align="center">🧙‍♂️YOU... SHALL TAKE NOTES!!!⭐</h1>
 
 ## 🧙‍♂️Features
-### 📖 Kindle Integration
+#### 📖 Kindle Integration
 - Extracts highlights and notes directly from the Kindle notebook page (`read.amazon.com/notebook` or `ler.amazon.com.br/notebook`)
 - Supports highlight colors and associated notes
 - Retrieves book title, author, and cover image
 
-### 🧠 Notion Export
+#### 🧠 Notion Export
 - Exports highlights as quote blocks with optional notes
 - Adds a summary count at the top of the Notion page (e.g., `265 Destaque(s) | 10 Nota(s)`)
 - Supports custom property names for book title and author
 - Smart batching to respect Notion’s 100-block API limit
 
-### 🛡️ Security & Privacy
+#### 🛡️ Security & Privacy
 - Notion API Token is masked with a blink-eye icon for visibility toggle
 - Securely stores token using `chrome.storage.local`
 - No data collection, ads, or tracking
 
-### 🧰 UI & UX Enhancements
+#### 🧰 UI & UX Enhancements
 - Simple pop-up UI for configuration and export actions
 - Dual-ring spinner for export feedback
 - Centered text for notifications and error messages
@@ -131,7 +131,7 @@ Found a bug or have a feature idea? Open an issue right here in this repo.
 ## 🎈FAQ
 💡 Curious how it works or have questions? 
 Browse the [FAQ](FAQ.MD) for answers, tips, and more.
-
+----
 ## 🧙Kindle wizardry deserves a star
 Smash that star button <img src="https://img.shields.io/github/stars/tuliosousapro/Kindle-To-Notion-Extension?style=social"> — it costs you nothing and means the world to this humble repo. Oh, and don’t be shy: If this extension casts a productivity spell on your Kindle chaos, hit that ⭐ and summon a tweet, post, or shout from the nearest rooftop.
 
