@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const authorPropertyInput = document.getElementById('authorProperty');
   const saveButton = document.getElementById('save');
   const exportButton = document.getElementById('export');
-  const status = document.getElementById('status');
   const spinner = document.getElementById('spinner');
+  const spinnerText = document.querySelector('.spinner-text');
+  const spinnerIcon = document.querySelector('.spinner');
 
   // Load saved settings
   chrome.storage.local.get(['token', 'databaseId', 'titleProperty', 'authorProperty'], (result) => {
@@ -23,37 +24,58 @@ document.addEventListener('DOMContentLoaded', () => {
     const titleProperty = titlePropertyInput.value;
     const authorProperty = authorPropertyInput.value;
     if (!databaseId.match(/^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$/i)) {
-      status.textContent = 'Error: Invalid Database ID format';
+      spinner.classList.remove('hidden');
+      spinnerIcon.classList.add('hidden');
+      spinnerText.textContent = 'Error: Invalid Database ID format';
       return;
     }
     if (!titleProperty || !authorProperty) {
-      status.textContent = 'Error: Title and Author property names are required';
+      spinner.classList.remove('hidden');
+      spinnerIcon.classList.add('hidden');
+      spinnerText.textContent = 'Error: Title and Author property names are required';
       return;
     }
     chrome.storage.local.set({ token, databaseId, titleProperty, authorProperty }, () => {
-      status.textContent = 'Settings saved!';
+      spinner.classList.remove('hidden');
+      spinnerIcon.classList.add('hidden');
+      spinnerText.textContent = 'Settings saved!';
+      setTimeout(() => {
+        spinner.classList.add('hidden');
+        spinnerText.textContent = '';
+      }, 2000); // Clear message after 2 seconds
     });
   });
 
   // Export to Notion
   exportButton.addEventListener('click', () => {
-    status.textContent = 'Exporting...';
     spinner.classList.remove('hidden');
+    spinnerIcon.classList.remove('hidden');
+    spinnerText.textContent = 'Exporting...';
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       if (tabs[0].url.startsWith('https://ler.amazon.com.br/notebook') || tabs[0].url.startsWith('https://read.amazon.com/notebook')) {
         chrome.tabs.sendMessage(tabs[0].id, { action: 'export' }, (response) => {
-          spinner.classList.add('hidden');
+          spinner.classList.remove('hidden');
+          spinnerIcon.classList.add('hidden');
           if (chrome.runtime.lastError) {
-            status.textContent = 'Error: Could not connect to content script';
+            spinnerText.textContent = 'Error: Could not connect to content script';
           } else if (response && response.status) {
-            status.textContent = response.status;
+            spinnerText.textContent = response.status;
           } else {
-            status.textContent = 'Error: Invalid response from content script';
+            spinnerText.textContent = 'Error: Invalid response from content script';
           }
+          setTimeout(() => {
+            spinner.classList.add('hidden');
+            spinnerText.textContent = '';
+          }, 2000); // Clear message after 2 seconds
         });
       } else {
-        spinner.classList.add('hidden');
-        status.textContent = 'Error: Not on a Kindle notes page';
+        spinner.classList.remove('hidden');
+        spinnerIcon.classList.add('hidden');
+        spinnerText.textContent = 'Error: Not on a Kindle notes page';
+        setTimeout(() => {
+          spinner.classList.add('hidden');
+          spinnerText.textContent = '';
+        }, 2000); // Clear message after 2 seconds
       }
     });
   });

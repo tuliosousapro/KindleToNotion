@@ -8,9 +8,9 @@
 </head>
 <body>
   <h3>Kindle to Notion Extension</h3>
-  <label>Notion API Token:</label>
+  <label title="Create an integration at https://www.notion.so/my-integrations and copy the 'Internal Integration Secret'.">Notion API Token:</label>
   <input type="text" id="token">
-  <label>Notion Database ID:</label>
+  <label title="Open your Notion database, copy the URL, and extract the 32-character ID (e.g., xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).">Notion Database ID:</label>
   <input type="text" id="databaseId">
   <label>Title Property Name:</label>
   <input type="text" id="titleProperty">
@@ -18,8 +18,10 @@
   <input type="text" id="authorProperty">
   <button id="save">Save Settings</button>
   <button id="export">Export to Notion</button>
-  <div id="spinner" class="spinner hidden"></div>
-  <div id="status"></div>
+  <div id="spinner" class="spinner-container hidden">
+    <div class="spinner hidden"></div>
+    <span class="spinner-text"></span>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>

@@ -11,6 +11,23 @@ h3 {
 label {
   display: block;
   margin: 10px 0 5px;
+  position: relative;
+  cursor: help;
+}
+
+label[title]:hover:after {
+  content: attr(title);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 200px;
+  z-index: 10;
+  white-space: normal;
 }
 
 input {
@@ -33,26 +50,35 @@ button:hover {
   background-color: #0056b3;
 }
 
-#status {
-  margin-top: 10px;
-  font-size: 12px;
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
 }
 
 .spinner {
-  width: 24px;
-  height: 24px;
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #007bff;
+  width: 28px;
+  height: 28px;
+  border: 4px solid #007bff;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
   border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin: 10px auto;
+  animation: dual-ring 1.2s linear infinite;
+}
+
+.spinner-text {
+  font-size: 12px;
+  color: #333;
+  margin-top: 5px;
+  text-align: center;
 }
 
 .hidden {
   display: none;
 }
 
-@keyframes spin {
+@keyframes dual-ring {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
