@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Kindle2Notion Extension",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "Export Kindle highlights and notes to Notion seamlessly.",
   "permissions": ["storage"],
   "host_permissions": [
@@ -33,5 +33,11 @@
     "48": "icons/icon48.png",
     "96": "icons/icon96.png",
     "128": "icons/icon128.png"
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

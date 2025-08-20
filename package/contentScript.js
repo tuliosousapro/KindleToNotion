@@ -4,7 +4,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === 'export') {
     console.log("Export message received");
     const title = document.querySelector('h3.kp-notebook-metadata')?.textContent.trim() || 'Unknown Title';
-    const author = document.querySelector('p.kp-notebook-metadata')?.textContent.trim() || 'Unknown Author';
+    const author = document.querySelector('p.a-spacing-none.a-spacing-top-micro.a-size-base.a-color-secondary.kp-notebook-selectable.kp-notebook-metadata')?.textContent.trim() || 'Unknown Author';
     const coverUrl = document.querySelector('img.kp-notebook-cover-image-border')?.src || '';
 
     const highlights = [];

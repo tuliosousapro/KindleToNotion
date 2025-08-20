@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const saveButton = document.getElementById('save');
   const exportButton = document.getElementById('export');
   const status = document.getElementById('status');
+  const spinner = document.getElementById('spinner');
 
   // Load saved settings
   chrome.storage.local.get(['token', 'databaseId', 'titleProperty', 'authorProperty'], (result) => {
@@ -37,9 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Export to Notion
   exportButton.addEventListener('click', () => {
     status.textContent = 'Exporting...';
+    spinner.classList.remove('hidden');
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-      if (tabs[0].url.startsWith('https://ler.amazon.com.br/notebook')) {
+      if (tabs[0].url.startsWith('https://ler.amazon.com.br/notebook') || tabs[0].url.startsWith('https://read.amazon.com/notebook')) {
         chrome.tabs.sendMessage(tabs[0].id, { action: 'export' }, (response) => {
+          spinner.classList.add('hidden');
           if (chrome.runtime.lastError) {
             status.textContent = 'Error: Could not connect to content script';
           } else if (response && response.status) {
@@ -49,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
       } else {
+        spinner.classList.add('hidden');
         status.textContent = 'Error: Not on a Kindle notes page';
       }
     });

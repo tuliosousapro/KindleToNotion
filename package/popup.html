@@ -2,28 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kindle to Notion Extension</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 10px; width: 300px; }
-    label { display: block; margin-top: 10px; }
-    input { width: 100%; padding: 5px; margin-top: 5px; }
-    button { margin-top: 10px; padding: 5px 10px; }
-    #status { margin-top: 10px; color: green; }
-  </style>
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
   <h3>Kindle to Notion Extension</h3>
-  <label for="token">Notion API Token:</label>
-  <input type="text" id="token" />
-  <label for="databaseId">Notion Database ID:</label>
-  <input type="text" id="databaseId" />
-  <label for="titleProperty">Title Property Name:</label>
-  <input type="text" id="titleProperty" placeholder="e.g., Título do Livro" />
-  <label for="authorProperty">Author Property Name:</label>
-  <input type="text" id="authorProperty" placeholder="e.g., Autor" />
+  <label>Notion API Token:</label>
+  <input type="text" id="token">
+  <label>Notion Database ID:</label>
+  <input type="text" id="databaseId">
+  <label>Title Property Name:</label>
+  <input type="text" id="titleProperty">
+  <label>Author Property Name:</label>
+  <input type="text" id="authorProperty">
   <button id="save">Save Settings</button>
   <button id="export">Export to Notion</button>
-  <p id="status"></p>
+  <div id="spinner" class="spinner hidden"></div>
+  <div id="status"></div>
   <script src="popup.js"></script>
 </body>
 </html>
