@@ -58,7 +58,7 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
 
 3. Open the extension's pop-up (click the extension icon in Chrome).
 4. Enter:
-   - **Notion API Token**: Your integration token.
+   - **Notion API Token**: Your integration token. (e.g., `ntn_300224xerequinhadepilada7Xm`).
    - **Notion Database ID**: Found in the database URL (e.g., `f7979b5axerequinha2f8fa`).
    - **Title Property Name**: The exact name of your database's title property (e.g., `Título do Livro`).
    - **Author Property Name**: The exact name of your database's author property (e.g., `Autor`).
