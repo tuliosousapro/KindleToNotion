@@ -5,10 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const authorPropertyInput = document.getElementById('authorProperty');
   const saveButton = document.getElementById('save');
   const exportButton = document.getElementById('export');
-  const toggleTokenButton = document.getElementById('toggleToken');
+  const toggleTokenIcon = document.getElementById('toggleToken');
   const spinner = document.getElementById('spinner');
   const spinnerText = document.querySelector('.spinner-text');
   const spinnerIcon = document.querySelector('.spinner');
+  const eyeIcon = toggleTokenIcon.querySelector('.eye-icon:not(.hidden)');
+  const slashedEyeIcon = toggleTokenIcon.querySelector('.eye-icon.hidden');
 
   // Load saved settings
   chrome.storage.local.get(['token', 'databaseId', 'titleProperty', 'authorProperty'], (result) => {
@@ -17,20 +19,27 @@ document.addEventListener('DOMContentLoaded', () => {
     titlePropertyInput.value = result.titleProperty || 'Título do Livro';
     authorPropertyInput.value = result.authorProperty || 'Autor';
     if (result.token) {
-      tokenInput.type = 'password'; // Mask token by default
+      tokenInput.type = 'password';
+      eyeIcon.classList.add('hidden');
+      slashedEyeIcon.classList.remove('hidden');
+      console.log('Token loaded, set to password with slashed-eye icon');
+    } else {
+      console.log('No token, set to text with eye icon');
     }
   });
 
-  // Toggle API Token visibility
-  toggleTokenButton.addEventListener('click', () => {
+  // Toggle token visibility
+  toggleTokenIcon.addEventListener('click', () => {
     if (tokenInput.type === 'password') {
       tokenInput.type = 'text';
-      toggleTokenButton.textContent = 'Hide';
-      toggleTokenButton.setAttribute('aria-label', 'Hide API Token');
+      eyeIcon.classList.remove('hidden');
+      slashedEyeIcon.classList.add('hidden');
+      console.log('Toggled to visible: text, eye icon');
     } else {
       tokenInput.type = 'password';
-      toggleTokenButton.textContent = 'Show';
-      toggleTokenButton.setAttribute('aria-label', 'Show API Token');
+      eyeIcon.classList.add('hidden');
+      slashedEyeIcon.classList.remove('hidden');
+      console.log('Toggled to hidden: password, slashed-eye icon');
     }
   });
 
@@ -44,21 +53,30 @@ document.addEventListener('DOMContentLoaded', () => {
       spinner.classList.remove('hidden');
       spinnerIcon.classList.add('hidden');
       spinnerText.textContent = 'Error: Invalid Database ID format';
+      setTimeout(() => {
+        spinner.classList.add('hidden');
+        spinnerText.textContent = '';
+      }, 2000);
       return;
     }
     if (!titleProperty || !authorProperty) {
       spinner.classList.remove('hidden');
       spinnerIcon.classList.add('hidden');
       spinnerText.textContent = 'Error: Title and Author property names are required';
+      setTimeout(() => {
+        spinner.classList.add('hidden');
+        spinnerText.textContent = '';
+      }, 2000);
       return;
     }
     chrome.storage.local.set({ token, databaseId, titleProperty, authorProperty }, () => {
-      tokenInput.type = 'password'; // Mask token after saving
-      toggleTokenButton.textContent = 'Show';
-      toggleTokenButton.setAttribute('aria-label', 'Show API Token');
       spinner.classList.remove('hidden');
       spinnerIcon.classList.add('hidden');
       spinnerText.textContent = 'Settings saved!';
+      tokenInput.type = 'password';
+      eyeIcon.classList.add('hidden');
+      slashedEyeIcon.classList.remove('hidden');
+      console.log('Settings saved, token masked with slashed-eye icon');
       setTimeout(() => {
         spinner.classList.add('hidden');
         spinnerText.textContent = '';

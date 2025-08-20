@@ -32,32 +32,10 @@ label[title]:hover:after {
 
 input {
   width: 100%;
-  padding: 5px;
+  padding: 5px 30px 5px 5px; /* Right padding for icon */
   margin-bottom: 10px;
-}
-
-.token-container {
-  display: flex;
-  gap: 5px;
-  margin-bottom: 10px;
-}
-
-#toggleToken {
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 12px;
-}
-
-#toggleToken:hover {
-  background-color: #0056b3;
-}
-
-#toggleToken:focus {
-  outline: 2px solid #007bff;
+  box-sizing: border-box;
+  line-height: 20px; /* Standardize input height for consistent icon alignment */
 }
 
 button {
@@ -105,4 +83,28 @@ button:hover {
 @keyframes dual-ring {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-icon {
+  position: absolute;
+  right: 8px; /* Slightly increased for better spacing */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Align to middle of input */
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.eye-icon {
+  display: block;
+}
+
+.eye-icon.hidden {
+  display: none;
 }
