@@ -55,7 +55,7 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
    - Open your database as a page and copy the Notion database ID
       - Database Link: `https://www.notion.so/f7979b5axerequinha2f8fa?v=796edexemplokabal79a096`
       - Database Id: `f7979b5axerequinha2f8fa`
-```
+
 3. Open the extension's pop-up (click the extension icon in Chrome).
 4. Enter:
    - **Notion API Token**: Your integration token.
