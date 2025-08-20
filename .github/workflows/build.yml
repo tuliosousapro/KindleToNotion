@@ -3,7 +3,7 @@ name: Build Extension
 on:
   push:
     branches:
-      - React-native-version  # Change to your branch, e.g., dev
+      - React-popup-correction  # Change to your branch, e.g., dev
 
 jobs:
   build:
