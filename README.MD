@@ -30,7 +30,7 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
 - No data collection, ads, or tracking
 
 ### 🧰 UI & UX Enhancements
-- Simple popup UI for configuration and export actions
+- Simple pop-up UI for configuration and export actions
 - Dual-ring spinner for export feedback
 - Centered text for notifications and error messages
 - Tooltips for Notion API Token and Database ID fields
@@ -80,6 +80,43 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
 - **Debugging**:
   - Open Chrome's developer tools (F12) on the Kindle page for content script logs.
   - Inspect the background page (Right-click extension icon > "Manage Extensions" > "Inspect views: background page") for API logs.
+  - `No build process required - it's vanilla JavaScript!`
+
+## 🛠️ Development
+
+### File Structure
+```
+kindle2notion-extension/
+├── manifest.json          # Extension configuration
+├── popup.html             # User interface
+├── popup.js               # UI logic and validation
+├── popup.css              # Modern styling
+├── contentScript.js       # DOM extraction
+├── background.js          # API integration
+├── content.css            # Content script styles
+├── test.js                # Unit tests
+└── icons/                 # Extension icons
+```
+
+### Supported Kindle Regions
+- 🇧🇷 Brazil: `ler.amazon.com.br/notebook`
+- 🇺🇸 United States: `read.amazon.com/notebook`
+
+## 🔧 Technical Details
+
+### Architecture
+```
+User Interface (popup.html/js) 
+    ↓
+Chrome Storage (encrypted local storage)
+    ↓
+Content Script (DOM extraction)
+    ↓
+Background Worker (API integration)
+    ↓
+Notion API (page creation)
+```
+
 
 ## 🤝Contributing <img src="https://img.shields.io/github/contributors/tuliosousapro/Kindle-To-Notion-Extension">
 We welcome contributions to improve this extension! To contribute:
@@ -97,8 +134,27 @@ Please ensure your code follows:
 ## 🔐License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+## 🔒 Privacy & Security
+- ✅ **Local processing** - No data sent to third parties
+- ✅ **Encrypted storage** - Notion token stored securely
+- ✅ **Minimal permissions** - Only accesses Kindle and Notion
+- ✅ **HTTPS only** - Secure communication
+- ✅ **No tracking** - Zero analytics or data collection
+
 ## 👾Issues
 Found a bug or have a feature idea? Open an issue right here in this repo.
+- [GitHub Issues](https://github.com/tuliosousapro/Kindle-To-Notion-Extension/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/tuliosousapro/Kindle-To-Notion-Extension/discussions)
+
+**Common Issues**
+
+| Issue | Solution |
+|-------|----------|
+| "Not on Kindle page" | Navigate to your Kindle notebook first |
+| "Invalid token" | Check your Notion integration token |
+| "Database not found" | Verify database ID and sharing permissions |
+| "No highlights found" | Ensure the page has loaded completely |
+| "Connection failed" | Use the "Test" button to diagnose issues |
 
 ## 🎈FAQ
 💡 Curious how it works or have questions? 
