@@ -2,7 +2,7 @@
   <img src="https://github.com/tuliosousapro/Kindle-To-Notion-Extension/blob/main/docs/Leonardo_Phoenix_10_Create_a_banner_image_for_the_GitHub_repos_2.jpg?raw=true" alt="Kindle To Notion Extension Banner" width="100%" />
 </p>
 
-<h1 align="center">Kindle To Notion Extension v1.2.1</h1>
+<h1 align="center">Kindle To Notion Extension v1.3.0</h1>
 <p align="center"><em>Export your Kindle highlights to Notion with a touch of retro fantasy magic.</em></p>
 <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg">  <img src="https://img.shields.io/badge/Made%20with-JavaScript-blue">  <img src="https://img.shields.io/badge/Notion-API-blue">  <img src="https://img.shields.io/badge/Platform-Chromium%20Extension-green">  <img src="https://img.shields.io/chrome-web-store/v/camgnmkmolfidaefoidblkkloimnmalo?label=Chrome%20Web%20Store">  <img src="https://img.shields.io/github/issues/tuliosousapro/Kindle-To-Notion-Extension">  <img src="https://img.shields.io/github/stars/tuliosousapro/Kindle-To-Notion-Extension?style=social">
@@ -13,11 +13,27 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
 <h1 align="center">🧙‍♂️YOU... SHALL TAKE NOTES!!!⭐</h1>
 
 ## 🧙‍♂️Features
-- 📚 Extracts book title, author, cover image, and highlights from Kindle.
-- 🌈 Supports highlight colors and associated notes.
-- 📝 Exports data to a Notion database as a page with quotes and notes.
-- 🔁 Smart batching for Notion API limits. 100-block limit by splitting requests.
-- 🔧 Configurable database property names for flexibility.
+### 📖 Kindle Integration
+- Extracts highlights and notes directly from the Kindle notebook page (`read.amazon.com/notebook` or `ler.amazon.com.br/notebook`)
+- Supports highlight colors and associated notes
+- Retrieves book title, author, and cover image
+
+### 🧠 Notion Export
+- Exports highlights as quote blocks with optional notes
+- Adds a summary count at the top of the Notion page (e.g., `265 Destaque(s) | 10 Nota(s)`)
+- Supports custom property names for book title and author
+- Smart batching to respect Notion’s 100-block API limit
+
+### 🛡️ Security & Privacy
+- Notion API Token is masked with a blink-eye icon for visibility toggle
+- Securely stores token using `chrome.storage.local`
+- No data collection, ads, or tracking
+
+### 🧰 UI & UX Enhancements
+- Simple popup UI for configuration and export actions
+- Dual-ring spinner for export feedback
+- Centered text for notifications and error messages
+- Tooltips for Notion API Token and Database ID fields
 
 ## 🛠️Installation
 1. Clone or download this repository.
@@ -37,7 +53,7 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
    - Go to Notion, create or select your destination page.
    - Certify that you have a database with at least the properties for Author and Book Title.
    - Open your database as a page and copy the Notion database ID
-3. Open the extension's popup (click the extension icon in Chrome).
+3. Open the extension's pop-up (click the extension icon in Chrome).
 4. Enter:
    - **Notion API Token**: Your integration token.
    - **Notion Database ID**: Found in the database URL (e.g., `https://www.notion.so/f7979b5axerequinha2f8fa?v=796edexemplokabal79a096` → `f7979b5axerequinha2f8fa`).
@@ -48,7 +64,7 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
 ## 🚀Usage
 1. Navigate to [ler.amazon.com.br/notebook](https://ler.amazon.com.br/notebook) or [read.amazon.com/notebook](https://read.amazon.com/notebook) in Chrome.
 2. Open the extension popup and click "Export to Notion."
-3. Check the status message in the popup for success or errors.
+3. Check the status message in the pop-up for success or errors.
 4. Verify the new page in your Notion database.
 
 ## 🧪Development
