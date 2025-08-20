@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const authorPropertyInput = document.getElementById('authorProperty');
   const saveButton = document.getElementById('save');
   const exportButton = document.getElementById('export');
+  const toggleTokenButton = document.getElementById('toggleToken');
   const spinner = document.getElementById('spinner');
   const spinnerText = document.querySelector('.spinner-text');
   const spinnerIcon = document.querySelector('.spinner');
@@ -15,6 +16,22 @@ document.addEventListener('DOMContentLoaded', () => {
     databaseIdInput.value = result.databaseId || '';
     titlePropertyInput.value = result.titleProperty || 'Título do Livro';
     authorPropertyInput.value = result.authorProperty || 'Autor';
+    if (result.token) {
+      tokenInput.type = 'password'; // Mask token by default
+    }
+  });
+
+  // Toggle API Token visibility
+  toggleTokenButton.addEventListener('click', () => {
+    if (tokenInput.type === 'password') {
+      tokenInput.type = 'text';
+      toggleTokenButton.textContent = 'Hide';
+      toggleTokenButton.setAttribute('aria-label', 'Hide API Token');
+    } else {
+      tokenInput.type = 'password';
+      toggleTokenButton.textContent = 'Show';
+      toggleTokenButton.setAttribute('aria-label', 'Show API Token');
+    }
   });
 
   // Save settings
@@ -36,13 +53,16 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
     chrome.storage.local.set({ token, databaseId, titleProperty, authorProperty }, () => {
+      tokenInput.type = 'password'; // Mask token after saving
+      toggleTokenButton.textContent = 'Show';
+      toggleTokenButton.setAttribute('aria-label', 'Show API Token');
       spinner.classList.remove('hidden');
       spinnerIcon.classList.add('hidden');
       spinnerText.textContent = 'Settings saved!';
       setTimeout(() => {
         spinner.classList.add('hidden');
         spinnerText.textContent = '';
-      }, 2000); // Clear message after 2 seconds
+      }, 2000);
     });
   });
 
@@ -66,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
           setTimeout(() => {
             spinner.classList.add('hidden');
             spinnerText.textContent = '';
-          }, 2000); // Clear message after 2 seconds
+          }, 2000);
         });
       } else {
         spinner.classList.remove('hidden');
@@ -75,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
           spinner.classList.add('hidden');
           spinnerText.textContent = '';
-        }, 2000); // Clear message after 2 seconds
+        }, 2000);
       }
     });
   });

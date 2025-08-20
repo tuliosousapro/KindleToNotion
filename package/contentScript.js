@@ -6,6 +6,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     const title = document.querySelector('h3.kp-notebook-metadata')?.textContent.trim() || 'Unknown Title';
     const author = document.querySelector('p.a-spacing-none.a-spacing-top-micro.a-size-base.a-color-secondary.kp-notebook-selectable.kp-notebook-metadata')?.textContent.trim() || 'Unknown Author';
     const coverUrl = document.querySelector('img.kp-notebook-cover-image-border')?.src || '';
+    const highlightCount = document.querySelector('#kp-notebook-highlights-count')?.textContent.trim() || '0';
+    const noteCount = document.querySelector('#kp-notebook-notes-count')?.textContent.trim() || '0';
 
     const highlights = [];
     const highlightElements = document.querySelectorAll('.kp-notebook-highlight');
@@ -21,7 +23,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       highlights.push({ text, color, note });
     });
 
-    const data = { title, author, coverUrl, highlights };
+    const data = { title, author, coverUrl, highlights, highlightCount, noteCount };
     chrome.runtime.sendMessage({ action: 'sendToNotion', data }, (response) => {
       if (chrome.runtime.lastError) {
         console.error('Error sending to background:', chrome.runtime.lastError);

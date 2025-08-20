@@ -9,7 +9,10 @@
 <body>
   <h3>Kindle to Notion Extension</h3>
   <label title="Create an integration at https://www.notion.so/my-integrations and copy the 'Internal Integration Secret'.">Notion API Token:</label>
-  <input type="text" id="token">
+  <div class="token-container">
+    <input type="password" id="token">
+    <button id="toggleToken" aria-label="Toggle API Token visibility">Show</button>
+  </div>
   <label title="Open your Notion database, copy the URL, and extract the 32-character ID (e.g., xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).">Notion Database ID:</label>
   <input type="text" id="databaseId">
   <label>Title Property Name:</label>
