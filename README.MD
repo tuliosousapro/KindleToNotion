@@ -130,7 +130,8 @@ Found a bug or have a feature idea? Open an issue right here in this repo.
 
 ## 🎈FAQ
 💡 Curious how it works or have questions? 
-Browse the [FAQ](FAQ.MD) for answers, tips, and more.
+- Browse the [FAQ CALABRESO EDITION](FAQ.MD) for answers, tips, and more.
+- **Wiki**: [Project Wiki](https://github.com/tuliosousapro/Kindle-To-Notion-Extension/wiki)
 
 ---
 
