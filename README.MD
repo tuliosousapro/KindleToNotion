@@ -45,19 +45,19 @@ A Chrome extension to export highlights and notes from Amazon Kindle's notebook 
 > 💡 Prefer a one-click install? [Get it from the Chrome Web Store](https://chromewebstore.google.com/detail/kindle2notion-extension/camgnmkmolfidaefoidblkkloimnmalo?authuser=0&hl=pt-BR)
 
 ## ⚙️Setup
-**1. Create a Notion integration:**
+1. **Create a Notion integration:**
    - Go to [Notion's Integrations page](https://www.notion.so/my-integrations).
    - Create a new integration and copy the "Internal Integration Token."
    - Share your target database with the integration (via the database's "Share" menu).
-**2. Create or open your Notion database:**
+2. **Create or open your Notion database:**
    - Go to Notion, create or select your destination page.
    - Certify that you have a database with at least the properties for Author and Book Title.
    - Open your database as a page and copy the Notion database ID
       - **Database Link:** `https://www.notion.so/f7979b5axerequinha2f8fa?v=796edexemplokabal79a096`
       - **Database Id:** `f7979b5axerequinha2f8fa`
 
-**3. Open the extension's pop-up (click the extension icon in Chrome).**
-**4. Enter:**
+3. **Open the extension's pop-up (click the extension icon in Chrome).**
+4. **Enter:**
    - **Notion API Token**: Your integration token. (e.g., `ntn_300224xerequinhadepilada7Xm`).
    - **Notion Database ID**: Found in the database URL (e.g., `f7979b5axerequinha2f8fa`).
    - **Title Property Name**: The exact name of your database's title property (e.g., `Título do Livro`).
