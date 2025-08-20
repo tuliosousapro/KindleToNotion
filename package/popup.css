@@ -1,0 +1,110 @@
+body {
+  width: 300px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  position: relative;
+  cursor: help;
+}
+
+label[title]:hover:after {
+  content: attr(title);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 200px;
+  z-index: 10;
+  white-space: normal;
+}
+
+input {
+  width: 100%;
+  padding: 5px 30px 5px 5px; /* Right padding for icon */
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  line-height: 20px; /* Standardize input height for consistent icon alignment */
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  border: 4px solid #007bff;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-radius: 50%;
+  animation: dual-ring 1.2s linear infinite;
+}
+
+.spinner-text {
+  font-size: 12px;
+  color: #333;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes dual-ring {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-icon {
+  position: absolute;
+  right: 8px; /* Slightly increased for better spacing */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Align to middle of input */
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.eye-icon {
+  display: block;
+}
+
+.eye-icon.hidden {
+  display: none;
+}

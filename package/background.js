@@ -20,7 +20,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
           return;
         }
 
-        const { title, author, coverUrl, highlights } = message.data;
+        const { title, author, coverUrl, highlights, highlightCount, noteCount } = message.data;
 
         // Convert highlights to Notion blocks
         const allChildren = highlights.map(({ text, color, note }) => {
@@ -43,14 +43,28 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
           return blocks;
         }).flat();
 
-        // Split into batches of 100
+        // Add count block at the top
+        const countBlock = {
+          type: 'paragraph',
+          paragraph: {
+            rich_text: [
+              {
+                text: { content: `${highlightCount} Destaque(s) | ${noteCount} Nota(s)` },
+                annotations: { bold: true }
+              }
+            ]
+          }
+        };
+
+        // Split into batches of 100, including count block in the first batch
         const batches = [];
-        for (let i = 0; i < allChildren.length; i += 100) {
+        const firstBatch = [countBlock, ...allChildren.slice(0, 99)];
+        batches.push(firstBatch);
+        for (let i = 99; i < allChildren.length; i += 100) {
           batches.push(allChildren.slice(i, i + 100));
         }
 
-        // Create the page with the first batch (or empty if no blocks)
-        const firstBatch = batches.length > 0 ? batches[0] : [];
+        // Create the page with the first batch
         const createPayload = {
           parent: { database_id: databaseId },
           properties: {
@@ -94,7 +108,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
           }
         }
 
-        sendResponse({ status: 'Export successful!' });
+        sendResponse({ status: `Export successful! ${highlightCount} Destaque(s) | ${noteCount} Nota(s)` });
       } catch (error) {
         sendResponse({ status: 'Error: ' + error.message });
       }

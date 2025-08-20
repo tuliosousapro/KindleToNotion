@@ -2,28 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kindle to Notion Extension</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 10px; width: 300px; }
-    label { display: block; margin-top: 10px; }
-    input { width: 100%; padding: 5px; margin-top: 5px; }
-    button { margin-top: 10px; padding: 5px 10px; }
-    #status { margin-top: 10px; color: green; }
-  </style>
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
   <h3>Kindle to Notion Extension</h3>
-  <label for="token">Notion API Token:</label>
-  <input type="text" id="token" />
-  <label for="databaseId">Notion Database ID:</label>
-  <input type="text" id="databaseId" />
-  <label for="titleProperty">Title Property Name:</label>
-  <input type="text" id="titleProperty" placeholder="e.g., Título do Livro" />
-  <label for="authorProperty">Author Property Name:</label>
-  <input type="text" id="authorProperty" placeholder="e.g., Autor" />
+  <label title="Create an integration at https://www.notion.so/my-integrations and copy the 'Internal Integration Secret'.">Notion API Token:</label>
+  <div class="input-group">
+    <input type="text" id="token">
+    <span id="toggleToken" class="toggle-icon" role="button" aria-label="Toggle API Token visibility">
+      <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2">
+        <path class="eye-path" d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+        <circle class="eye-pupil" cx="12" cy="12" r="3"></circle>
+      </svg>
+      <svg class="eye-icon hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2">
+        <path class="eye-path" d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+        <line x1="1" y1="1" x2="23" y2="23"></line>
+      </svg>
+    </span>
+  </div>
+  <label title="Open your Notion database, copy the URL, and extract the 32-character ID (e.g., xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).">Notion Database ID:</label>
+  <input type="text" id="databaseId">
+  <label>Title Property Name:</label>
+  <input type="text" id="titleProperty">
+  <label>Author Property Name:</label>
+  <input type="text" id="authorProperty">
   <button id="save">Save Settings</button>
   <button id="export">Export to Notion</button>
-  <p id="status"></p>
+  <div id="spinner" class="spinner-container hidden">
+    <div class="spinner hidden"></div>
+    <span class="spinner-text"></span>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
