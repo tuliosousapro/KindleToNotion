@@ -12,10 +12,11 @@ Have you ever used a Kindle to read your books?
 Have you ever tried to work on your notes?
 Maybe tried to organize for further reference?
 
-Well, I have. And it happens to be the most boring task in the world. 
-> ✂️ Copy and pasting just sucks. It's time-consuming and definitely gives you more work than organization.
+Well, I have. And it happens to be the most boring task in the world. Copy and pasting just sucks. It's time-consuming and definitely gives you more work than organization.
 
-Kindle To Notion was created to solve your note-taking problems. It's your ultimate tool for organizing reading insights. It exports highlights and notes from your Kindle notebook pages directly to your Notion database. With just a few clicks, it extracts book titles, authors, cover images, and colored annotations.
+> Kindle To Notion was created to solve your note-taking problems. 
+
+It's your ultimate tool for organizing reading insights. It exports highlights and notes from your Kindle notebook pages directly to your Notion database. With just a few clicks, it extracts book titles, authors, cover images, and colored annotations.
 
 <h1 align="center">🧙‍♂️YOU... SHALL TAKE NOTES!!!⭐</h1>
 
